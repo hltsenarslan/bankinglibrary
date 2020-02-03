@@ -11,6 +11,11 @@ import BankingLibrary
 @testable import BankingLibrary
 
 final class IbanHelperTests: XCTestCase {
+    static var allTests = [
+        ("IbanHelperTests", testValidIban),
+        ("testNotValidIban", testNotValidIban),
+    ]
+    
     func testValidIban() {
         let iban = "TR10 0020 5000 0083 8472 8000 02"
         let result = IbanValidator().validateIban(iban: iban)
@@ -27,10 +32,4 @@ final class IbanHelperTests: XCTestCase {
         XCTAssertFalse(result2)
         
     }
-    
-    static var allTests = [
-           ("IbanHelperTests", testValidIban),
-           ("testNotValidIban", testNotValidIban),
-       ]
-    
 }
