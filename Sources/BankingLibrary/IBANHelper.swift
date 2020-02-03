@@ -7,7 +7,9 @@
 
 import Foundation
 
-open class IbanValidator {
+public class IbanValidator {
+    public init() {}
+    
     public func validateIban(iban: String) -> Bool {
         let iban = iban.replacingOccurrences(of: " ", with: "")
         guard iban.count >= 4 else {
