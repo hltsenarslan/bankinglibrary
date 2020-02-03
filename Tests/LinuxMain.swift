@@ -3,5 +3,5 @@ import XCTest
 import BankingLibraryTests
 
 var tests = [XCTestCaseEntry]()
-tests += BankingLibraryTests.allTests()
+tests += IbanHelperTests.allTests()
 XCTMain(tests)
