@@ -15,5 +15,6 @@ public class EmailValidator  {
 
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
+        print("asdf")
     }
 }
